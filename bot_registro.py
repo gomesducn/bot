@@ -5,6 +5,7 @@ import datetime
 import asyncio
 import pytz
 
+load_dotenv()  # Carrega as variáveis do .env
 ID_CANAL_REGISTRO_PENDENTE = 1387420027510329505
 ID_CATEGORIA_METAS = 1387420207009632309
 
