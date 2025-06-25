@@ -1,9 +1,12 @@
 import discord
 from discord.ext import commands
 from discord import app_commands, Interaction, ui
+from dotenv import load_dotenv
+import os
 import datetime
 import asyncio
 import pytz
+# Adicione isso no topo do código
 
 load_dotenv()  # Carrega as variáveis do .env
 ID_CANAL_REGISTRO_PENDENTE = 1387420027510329505
