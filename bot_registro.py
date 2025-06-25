@@ -1,14 +1,15 @@
 import discord
 from discord.ext import commands
 from discord import app_commands, Interaction, ui
-from dotenv import load_dotenv
-import os
 import datetime
 import asyncio
 import pytz
-# Adicione isso no topo do código
+import os
+from dotenv import load_dotenv
 
-load_dotenv()  # Carrega as variáveis do .env
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
+
 ID_CANAL_REGISTRO_PENDENTE = 1387420027510329505
 ID_CATEGORIA_METAS = 1387420207009632309
 
@@ -212,5 +213,4 @@ async def lembrete(interaction: Interaction):
 
     await interaction.response.send_message("✅ Aviso enviado em todos os canais de metas.", ephemeral=True)
 
-TOKEN = os.getenv("TOKEN")
 bot.run(TOKEN)
