@@ -212,4 +212,5 @@ async def lembrete(interaction: Interaction):
 
     await interaction.response.send_message("✅ Aviso enviado em todos os canais de metas.", ephemeral=True)
 
+TOKEN = os.getenv("TOKEN")
 bot.run(TOKEN)
